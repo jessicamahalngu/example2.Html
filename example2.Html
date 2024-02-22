@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+<title>
+Example1 - Add 2 Numbers
+</title>
+
+<script>
+function addNumbers()
+{
+var num1 = parseFloat(document.getElementById('number1').value);
+var num2 = parseFloat(document.getElementById('number2').value);
+
+var sum = num1+ num2;
+
+document.getElementById('result').innerText ='Output: ' + sum;
+}
+</script>
+</head> 
+
+
+<body>
+<label><b>Welcome, Enter Numbers Below:</b></label>
+<br>
+<label>Number 1:</label>
+<input type="text" id ="number1">
+<br>
+<label>Number 2:</label>
+<input type="text" id ="number2">
+<br>
+<button onclick="addNumbers()">Add</button>
+<br>
+<p id="result"></p>
+
+</body>
+
+</html>
